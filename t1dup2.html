@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#text-position {
+   position: absolute;
+   left:300px;
+   bottom: 685px;
+   text-align: center;
+   width: 30%;
+   
+
+}
+#button {
+   position: absolute;
+   left:800px;
+   bottom: 685px;
+   text-align: center;
+   
+
+}
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  margin-left:-5px;
+  margin-right:-5px;
+}
+  
+.column {
+  float: left;
+  width: 25%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid orange;
+}
+
+th, td {
+  text-align: left;
+  padding: 16px;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+</style>
+</head>
+<body>
+
+<h2 style="color:orange"> Weather Forecast</h2>
+
+<textarea id="text-position">
+visakhapatnam
+</textarea>
+<input id="button" type="submit" value="Search" style="background-color:orange">
+<div class="row">
+  <div class="column">
+    <table>  
+
+<tr style="background-color:orange"><td colspan=2>Date:dd/mm/yyyy</th></tr>  
+<tr><td colspan=2>Temperature</td></tr>  
+<tr><td>Min</td><td>Max</td></tr>  
+<tr><td>xx.xx</td><td>xx.xx</td></tr>  
+<tr><td>pressure</td><td>xxx.xx</td></tr>  
+<tr><td>humidity</td><td>xxx.xx</td></tr>  
+</table>  
+  </div>
+  <div class="column">
+    <table >  
+
+<tr style="background-color:orange"><td colspan=2>Date:dd/mm/yyyy</th></tr>  
+<tr><td colspan=2>Temperature</td></tr>  
+<tr><td>Min</td><td>Max</td></tr>  
+<tr><td>xx.xx</td><td>xx.xx</td></tr>  
+<tr><td>pressure</td><td>xxx.xx</td></tr>  
+<tr><td>humidity</td><td>xxx.xx</td></tr>  
+</table>  
+  </div>
+  
+  <div class="column">
+    <table >  
+
+<tr style="background-color:orange"><td colspan=2>Date:dd/mm/yyyy</th></tr>  
+<tr><td colspan=2>Temperature</td></tr>  
+<tr><td>Min</td><td>Max</td></tr>  
+<tr><td>xx.xx</td><td>xx.xx</td></tr>  
+<tr><td>pressure</td><td>xxx.xx</td></tr>  
+<tr><td>humidity</td><td>xxx.xx</td></tr>  
+</table>  
+  </div>
+  <div class="column">
+    <table >  
+
+<tr style="background-color:orange"><td colspan=2>Date:dd/mm/yyyy</th></tr>  
+<tr><td colspan=2>Temperature</td></tr>  
+<tr><td>Min</td><td>Max</td></tr>  
+<tr><td>xx.xx</td><td>xx.xx</td></tr>  
+<tr><td>pressure</td><td>xxx.xx</td></tr>  
+<tr><td>humidity</td><td>xxx.xx</td></tr>  
+</table>  
+  </div>
+</div>
+
+</body>
+</html>

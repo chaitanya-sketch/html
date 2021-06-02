@@ -1,0 +1,95 @@
+*{
+    box-sizing: border-box;
+}
+.wrapper {
+    display: flex;  
+    flex-flow: row wrap;
+    font-weight: bold;
+    
+  }
+  
+  .wrapper1 > * {
+    padding: 10px;
+    flex: 1 100%;
+  }
+  .wrapper1 {
+    display: flex;  
+    flex-flow: row wrap;
+    font-weight: bold;
+    text-align: center; 
+    background-color: bisque;
+  }
+  
+  .wrapper > * {
+    padding: 10px;
+    flex: 1 100%;
+  }
+  
+  .header {
+    color:rgb(225,73,0);
+    font-size:40px;
+	text-align:center-left;
+  }
+  #b {
+    position: absolute;
+    top:30px;
+    text-align:50%;
+    color:white;
+    background-color:rgb(225,73,0);
+    border-color:rgb(225,73,0);
+     border-width:1px;
+     border-style:solid;
+     border-radius:5px;
+    width:100px;
+    height:30px;
+   left:36%;
+ }
+ #text-position {
+    position: absolute;
+   left:320px;
+   bottom: 695px;
+   text-align:center-left;
+   width: 15%;
+   height:3.5%;
+   border-color:rgb(225,73,0);
+	border-width:1px;
+	border-style:solid;
+	border-radius:5px;
+ }
+
+ .row {
+    margin-left:-5px;
+    margin-right:-5px;
+    width:100%;
+  }
+    
+  .column1,.column2,.column3,.column4 {
+    float: left;
+    width: 24%;
+    padding: 5px;
+    margin:2px;
+  }
+  .one,.two,.three,.four{
+      width:100%;
+  }
+  
+  /* Clearfix (clear floats) */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  #table{
+    background-color:rgb(225,73,0);
+   }
+  
+  
+  th, td {
+    text-align: center;
+    padding: 16px;
+    border: 1px solid black;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }

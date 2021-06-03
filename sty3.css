@@ -43,6 +43,7 @@
     width:100px;
     height:30px;
    left:36%;
+   padding-bottom: 10px;
  }
  #text-position {
     position: absolute;
@@ -55,6 +56,11 @@
 	border-width:1px;
 	border-style:solid;
 	border-radius:5px;
+ }
+ #s{
+   position: relative;
+   padding: 2px;
+   top:-18px
  }
 
  .row {
@@ -92,4 +98,143 @@
   
   tr:nth-child(even) {
     background-color: #f2f2f2;
+  }
+  @media only screen and (max-width:1030px) {
+    .column1,.column2,.column3,.column4 {
+     width:100%;
+     background-color:rgb(87, 32, 189);
+    }
+  }
+  @media only screen and (max-width: 1030px) {
+   .header{
+     font-size:44px;
+    text-align:left;
+    }
+  }
+  @media only screen and (max-width: 1030px) {
+   #text-position {
+    position:absolute;
+    top:32px;
+    left:350px;
+    width:180px;
+    height:30px;
+    }
+  }
+  @media only screen and (max-width: 1030px) {
+   #b{
+  position:absolute;
+  left:540px;
+  top:32px;
+  width:100px;
+  height:30px;
+    }
+  }
+  @media only screen and (max-width:900px) {
+    .column1,.column2,.column3,.column4 {
+     width:100%;
+     background-color:yellow;
+    }
+  }
+  @media only screen and (max-width: 900px) {
+   .header{
+     font-size:44px;
+    text-align:left;
+    }
+  }
+  @media only screen and (max-width: 900px) {
+   #text-position {
+    position:absolute;
+    top:30px;
+    left:350px;
+    width:180px;
+    height:30px;
+    }
+  }
+  @media only screen and (max-width: 900px) {
+   #b{
+  position:absolute;
+  left:540px;
+  top:30px;
+  width:100px;
+  height:30px;
+    }
+  }
+  @media only screen and  (max-width: 600px) {
+    .column1,.column2,.column3,.column4 {
+     width:100%;
+     background-color:rgb(16, 175, 114);
+    }
+  }
+  @media only screen and (max-width: 600px) {
+   .header{
+     font-size:20px;
+    text-align:left;
+    }
+  }
+  @media only screen and (max-width: 600px) {
+   #text-position {
+    position:absolute;
+    top:20px;
+    left:180px;
+    width:120px;
+    height:8px;
+    }
+  }
+  @media only screen and  (max-width: 600px) {
+    #s{
+      position: relative;
+      top:-22.6px;
+      left:-5.4px;
+      padding:2px;
+    }
+  }
+  
+  @media only screen and (max-width: 600px) {
+   #b{
+  position:absolute;
+  left:320px;
+  top:20px;
+  width:70px;
+  height:5px;
+    }
+  }
+  @media only screen and (max-width: 400px) {
+    .column1,.column2,.column3,.column4 {
+     width:100%;
+     background-color:red;
+    }
+  }
+  @media only screen and (max-width: 400px) {
+   .header{
+     font-size:18px;
+    text-align:left;
+    }
+  }
+  @media only screen and (max-width: 400px) {
+   #text-position {
+    position:absolute;
+    top:15px;
+    left:150px;
+    width:120px;
+    height:10px;
+    margin:2px;
+    }
+  }
+  @media only screen and  (max-width: 400px) {
+   #b{
+  position:absolute;
+  left:280px;
+  top:15px;
+  width:50px;
+  height:20px;
+  margin:2px;
+    }
+  }
+  @media only screen and  (max-width: 400px) {
+    #s{
+      position: relative;
+      top:-22.6px;
+      left:-5.4px;
+      padding:2px;
+    }
   }

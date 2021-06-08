@@ -3,13 +3,20 @@
 <head>
     <link rel="stylesheet" type="text/css" href="sty3.css">
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <script type="text/javascript">
+      function buttonClick()
+      {
+        var str=document.getElementById("text-position").value;
+      alert(str);
+      }
+      </script>
 
 </head>
 <body>
     <div class="wrapper">
         <header class="header">Weather forecast</header>
-        <input type="text" id="text-position" >
-        <button type="submit" id="b"><p id="s">search</p></button>
+        <input type="text" id="text-position" placeholder="Enter City">
+        <button onclick="buttonClick()" id="b"><p id="s">search</p></button>
 
 </div>
  <div class="wrapper1">
@@ -63,5 +70,6 @@
     </div>
   </div>
 </div>  
+
 </body>
 </html>

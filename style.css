@@ -71,13 +71,13 @@ border-radius:5px;
   width:100%;
 }
   
-.column1,.column2,.column3,.column4 {
+.column {
   float: left;
   width: 24%;
   padding: 5px;
   margin:2px;
 }
-.one,.two,.three,.four{
+.k{
     width:100%;
 }
 
@@ -87,6 +87,7 @@ border-radius:5px;
   clear: both;
   display: table;
 }
+
 #table{
   background-color:rgb(225,73,0);
  }

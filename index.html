@@ -4,20 +4,27 @@
 <head>
   <link rel="stylesheet" type="text/css" href="style.css">
   <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.1/js/bootstrap.min.js" integrity="sha512-EKWWs1ZcA2ZY9lbLISPz8aGR2+L7JVYqBAYTq5AXgBkSjRSuQEGqWx8R1zAX16KdXPaCjOCaKE8MCpU0wcHlHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.1/css/bootstrap.min.css" integrity="sha512-Ez0cGzNzHR1tYAv56860NLspgUGuQw16GiOOp/I2LuTmpSK9xDXlgJz3XN4cnpXWDmkNBKXR/VDMTCnAaEooxA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   
 </head>
 
 <body>
-  <div class="wrapper">
-    <header class="header">Weather forecast</header>
-    <input type="text" id="text-position" placeholder="Enter City">
-    <button onclick="buttonClick()" id="b">
-      <p id="s">search</p>
-    </button>
-
+  <div class="">
+    <header class="">
+      <div class="row align-items-center">
+        <div class="header col-4">Weather forecast</div>
+        <div class=" col-8"><input type="text" id="text-position" placeholder="Enter City">
+        
+          <button onclick="buttonClick()" id="b" class="btn btn-round btn-primary">
+           <p class="s">search</p> 
+          </button>
+        </div>
+    </div>
+  </header>
   </div>
   <div class="wrapper1">
-    <div class="row" id="tablewrap">
+    <div class="row weather-block" id="tablewrap">
       
       
        </div>
@@ -31,9 +38,9 @@
 	var tablewrap=document.getElementById("tablewrap");
 	function block(mClass, html) {
     
-    return '<div class="' + mClass + '">' + html + '</div>';
+    return '<div class="col-3 ' + mClass + '">' + html + '</div>';
 }
-var tab=`<table class="k">
+var tab=`<table class="table mytab table-striped table-bordered">
 
 <tr id="table">
   <td colspan=2>Date:DD/MM/YYYY</th>
@@ -60,7 +67,7 @@ var tab=`<table class="k">
 </table>`
 for (var i = 0; i < 4; i++) {
  
-    tablewrap.innerHTML += block('column', tab);
+    tablewrap.innerHTML += block('column-block', tab);
 }
 	
     

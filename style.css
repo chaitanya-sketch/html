@@ -33,7 +33,7 @@ text-align:center-left;
 
 #b {
  position:relative;
-  top:12px;
+  top:-2px;
   text-align:50%;
   color:white;
   background-color:rgb(225,73,0);
@@ -43,14 +43,14 @@ text-align:center-left;
    border-radius:5px;
   width:100px;
   height:26px;
- left:2%;
+ /*left:2%;*/
  padding-bottom: 10px;
 
 }
 #text-position {
   position:relative;
- left:1%;
- top:12px;
+ /*left:1%;
+ top:12px;*/
  text-align:center-left;
  width: 15%;
  height:26px;
@@ -59,7 +59,7 @@ border-width:1px;
 border-style:solid;
 border-radius:5px;
    }
-#s{
+.s{
  position: relative;
  padding: 2px;
  top:-12px
@@ -88,12 +88,20 @@ border-radius:5px;
   display: table;
 }
 
-#table{
+.weather-block .table.mytab {
+  border: 2px solid #00f;
+}
+
+.weather-block .table {
+  border: 1px solid #000;
+}
+
+.weather-block  #table{
   background-color:rgb(225,73,0);
  }
 
 
-th, td {
+ .weather-block th, .weather-block td {
   text-align: center;
   padding: 16px;
   border: 1px solid black;
@@ -103,7 +111,7 @@ tr:nth-child(even) {
   background-color: #f2f2f2;
 }
 @media only screen and (max-width:1030px) {
-  .column1,.column2,.column3,.column4 {
+  .column {
    width:100%;
    background-color:rgb(87, 32, 189);
   }
@@ -117,8 +125,8 @@ tr:nth-child(even) {
 @media only screen and (max-width: 1030px) {
  #text-position {
   position:relative;
-  top:14px;
-  left:12px;
+  /*top:14px;
+  left:12px;*/
   width:180px;
   height:28px;
   }
@@ -126,8 +134,8 @@ tr:nth-child(even) {
 @media only screen and (max-width: 1030px) {
  #b{
 position:relative;
-left:16px;
-top:14px;
+/* left:16px;
+top:14px;*/
 width:100px;
 height:28px;
   }
@@ -147,8 +155,8 @@ height:28px;
 @media only screen and (max-width: 900px) {
  #text-position {
   position:relative;
-  top:14px;
-  left:10px;
+  /*top:14px;
+  left:10px;*/
   width:160px;
   height:28px;
   }
@@ -156,8 +164,8 @@ height:28px;
 @media only screen and (max-width: 900px) {
  #b{
 position:relative;
-left:15px;
-top:14px;
+/*left:15px;
+top:14px;*/
 width:80px;
 height:28px;
   }

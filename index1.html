@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <title>Ajax</title>
+    <style>
+        body{
+            padding-left:20px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h3>AJAX</h3>
+    <p>please enter country</p>
+    <input type="text" name="country" id="country">
+    <p>
+        <button type="button" onclick="buttonClick()">search</button>
+    </p>
+    capital is:<span id="capital"></span>
+  <script type="text/javascript">
+    function buttonClick() {
+      var country = document.getElementById("country").value;
+      var xhttp= new XMLHttpRequest();
+
+      xhttp.onreadystatechange=function(){
+          if(xhttp.readyState===4 && this.status===200){
+              var responseData=xhttp.responseText;
+              var jsonData=JSON.parse(responseData);
+              console.log(jsonData);
+              var capital=jsonData[0].capital;
+              console.log(capital);
+              document.getElementById("capital").innerHTML=capital;
+          }
+      };
+      xhttp.open("GET","https://restcountries.eu/rest/v2/name/"+country+"?fullText=true",true);
+      xhttp.send();
+    }
+  </script>
+  </body>
+  </html>
+
+

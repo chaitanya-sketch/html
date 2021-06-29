@@ -20,9 +20,6 @@
   background-color: bisque;
 }
 
-
-
-
 .header {
   color:rgb(225,73,0);
   font-size:40px;
@@ -31,9 +28,9 @@ text-align:center-left;
 }
 
 
-#b {
+.b {
  position:relative;
-  top:12px;
+  top:16px;
   text-align:50%;
   color:white;
   background-color:rgb(225,73,0);
@@ -47,10 +44,10 @@ text-align:center-left;
  padding-bottom: 10px;
 
 }
-#text-position {
+.text-position {
   position:relative;
  left:1%;
- top:12px;
+ top:16px;
  text-align:center-left;
  width: 15%;
  height:26px;
@@ -59,10 +56,10 @@ border-width:1px;
 border-style:solid;
 border-radius:5px;
    }
-#s{
+.s{
  position: relative;
  padding: 2px;
- top:-12px
+ top:-2px
 }
 
 .row {
@@ -71,13 +68,13 @@ border-radius:5px;
   width:100%;
 }
   
-.column1,.column2,.column3,.column4 {
+.column {
   float: left;
   width: 24%;
   padding: 5px;
   margin:2px;
 }
-.one,.two,.three,.four{
+.k{
     width:100%;
 }
 
@@ -102,7 +99,7 @@ tr:nth-child(even) {
   background-color: #f2f2f2;
 }
 @media only screen and (max-width:1030px) {
-  .column1,.column2,.column3,.column4 {
+  .column {
    width:100%;
    background-color:rgb(87, 32, 189);
   }
@@ -114,7 +111,7 @@ tr:nth-child(even) {
   }
 }
 @media only screen and (max-width: 1030px) {
- #text-position {
+ .text-position {
   position:relative;
   top:14px;
   left:12px;
@@ -123,7 +120,7 @@ tr:nth-child(even) {
   }
 }
 @media only screen and (max-width: 1030px) {
- #b{
+ .b{
 position:relative;
 left:16px;
 top:14px;
@@ -132,7 +129,7 @@ height:28px;
   }
 }
 @media only screen and (max-width:900px) {
-  .column1,.column2,.column3,.column4 {
+  .column {
    width:100%;
    background-color:yellow;
   }
@@ -144,25 +141,33 @@ height:28px;
   }
 }
 @media only screen and (max-width: 900px) {
- #text-position {
+ .text-position {
   position:relative;
-  top:14px;
+  top:20px;
   left:10px;
   width:160px;
   height:28px;
   }
 }
 @media only screen and (max-width: 900px) {
- #b{
+ .b{
 position:relative;
 left:15px;
-top:14px;
+top:20px;
 width:80px;
 height:28px;
   }
 }
+@media only screen and  (max-width: 400px) {
+  .s{
+    position: relative;
+    top:1px;
+    left:-5px;
+    padding:2px;
+  }
+}
 @media only screen and  (max-width: 600px) {
-  .column1,.column2,.column3,.column4 {
+  .column {
    width:100%;
    background-color:rgb(16, 175, 114);
   }
@@ -174,34 +179,34 @@ height:28px;
   }
 }
 @media only screen and (max-width: 600px) {
- #text-position {
+ .text-position {
   position:relative;
-  top:4.8px;
+  top:8px;
   left:10px;
   width:120px;
   height:14px;
   }
 }
 @media only screen and  (max-width: 600px) {
-  #s{
+  .s{
     position: relative;
-    top:-18px;
+    top:-8px;
     left:-5.4px;
     padding:2px;
   }
 }
 
 @media only screen and (max-width: 600px) {
- #b{
+ .b{
 position:relative;
 left:12px;
-top:4.8px;
+top:8px;
 width:70px;
 height:14px;
   }
 }
 @media only screen and (max-width: 400px) {
-  .column1,.column2,.column3,.column4 {
+  .column {
    width:100%;
    background-color:red;
   }
@@ -213,9 +218,9 @@ height:14px;
   }
 }
 @media only screen and (max-width: 400px) {
- #text-position {
+ .text-position {
   position:relative;
-  top:1.2px;
+  top:5px;
   left:0px;
   width:120px;
   height:14px;
@@ -223,19 +228,19 @@ height:14px;
   }
 }
 @media only screen and  (max-width: 400px) {
- #b{
+ .b{
 position:relative;
 left:0px;
-top:1.2px;
+top:5px;
 width:50px;
 height:14px;
 margin:2px;
   }
 }
 @media only screen and  (max-width: 400px) {
-  #s{
+  .s{
     position: relative;
-    top:-18px;
+    top:-6px;
     left:-5px;
     padding:2px;
   }
